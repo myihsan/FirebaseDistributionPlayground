@@ -21,6 +21,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            firebaseAppDistribution {
+                artifactType = "APK"
+            }
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
